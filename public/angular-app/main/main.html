@@ -1,0 +1,13 @@
+<div>
+    <form name="symbol" ng-submit="vm.stocksSearchOne()">
+     
+       <label for="symbols">Search for Company by Stock Symbol:</label>
+          <input type="text" name="symbol" ng-model="vm.symbol" placeholder="Stock Symbol">
+
+      <button type="submit" class="btn btn-success">Get Stock Quote</button>
+        <ul>
+          <li dir-paginate="item in collection | filter: Symbol | itemsPerPage: 10">...<a ng-href="#!/company/{{ company.Symbol }}">{{ company.Symbol }} - {{ company.Name }}</a></li>
+
+        </ul>
+    </form>
+</div> 

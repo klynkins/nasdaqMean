@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="meanstock">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nasdaq Stock</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div ng-view></div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted text-center">
+        <img src="images/kc.png" height="26" alt="KC" />
+      </p>
+
+      <p class="text-muted text-center">
+        <small>&copy; 2018 Katelynn Campbell</small>
+      </p>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-route/angular-route.js"></script>
+	<script src="angular-app/app.js"></script>
+	<script src="angular-app/stock-list/stock-list-controller.js"></script>
+	<script src='angular-app/stock-display/stock-display-controller.js'></script>
+	<script src="angular-app/stock-data-factory/stock-data-factory.js"></script>
+	
+</body>
+
+</html>
