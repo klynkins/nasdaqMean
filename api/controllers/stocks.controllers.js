@@ -101,6 +101,4 @@ module.exports.stocksGetOne = function(req, res){
 				.status(response.status)
 				.json(response.message);	
 			});
-		};		
-		
-	
+		};

@@ -1,5 +1,5 @@
 <h1>{{ vm.title }}</h1>
 <h4> Stock Names - Stock Symbols - Stock Industries</h4>
 <ul>
-    <li ng-repeat="stock in vm.stocks"><a ng-href="#!/stocks/{{ stock._id }}">{{ stock.Name }} - {{ stock.Symbol }} - {{ stock.Industry }}</a></li>
+    <li ng-repeat="stock in vm.stocks"><a ng-href="#!/stock/{{ stock._id }}">{{ stock.Name }} - {{ stock.Symbol }} - {{ stock.Industry }}</a></li>
 </ul>

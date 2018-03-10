@@ -36,4 +36,8 @@ process.once("SIGUSR2", function(){
 	});
 });
 
-require('./stocks.model.js');
+require('./stocks.model');
+require('./users.model'); 
+require('./query.model'); 
+
+
